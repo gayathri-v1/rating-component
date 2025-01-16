@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="./app.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body class="bg-very-dark-blue">
+
+  <!-- Rating state start -->
+  <article class="flex justify-center gap-20">
+<section class="bg-dark-blue p-10 w-96 rounded-xl flex flex-col gap-8 mt-40 rating">
+  <img src="../images/icon-star.svg" alt="star icon for the rating card" class="w-5 h-5">
+
+  <h2 class="text-white">How did we do?</h2>
+
+ <p class="text-light-grey"> Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+
+ <section class="btn flex flex-row gap-5 justify-center ratingBtns">
+  <button class="text-gray-400 bg-dark-blue-bg px-3 rounded-full hover:bg-white active:bg-orange" value="1">1</button> 
+  <button class="text-gray-400 bg-dark-blue-bg px-3 rounded-full hover:bg-white active:bg-orange" value="2">2</button> 
+  <button class="text-gray-400 bg-dark-blue-bg px-3 rounded-full hover:bg-white active:bg-orange" value="3">3</button> 
+  <button class="text-gray-400 bg-dark-blue-bg px-3 rounded-full hover:bg-white active:bg-orange" value="4">4</button> 
+  <button class="text-gray-400 bg-dark-blue-bg px-3 rounded-full hover:bg-white active:bg-orange" value="5">5</button> 
+</section>
+
+  <button type="button" class="bg-orange rounded-full px-28 py-2 uppercase hover:bg-white submit">Submit</button>
+</section>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+   
+<section class="bg-dark-blue w-96 h-96 mt-40 rounded-xl p-8 flex flex-col items-center gap-6 thanks">
+  <img src="../images/illustration-thank-you.svg" alt="digital illustration of a mobile with a card and bill">
+  <p class="bg-dark-blue-bg text-orange p-1 rounded-full">You selected <span class="inputValue"></span> out of 5</p>
+
+  <p class="text-white text-2xl text-justify">Thank you!</p>
+
+  <p class="text-light-grey text-justify">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+
+  <!-- Thank you state end -->
+
+</section>
+</article>
+
+  <footer>
+  <section class="attribution">
+    <p class="text-light-grey">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p class="text-light-grey">Coded by <a href="#">gayathri-v1</a>.</p>
+  </section>
+</footer>
+</body>
+</html>
